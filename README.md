@@ -36,7 +36,9 @@ git clone -b master https://github.com/hyperledger/fabric-samples.git
 
 ### Download and install fabric binaries version 1.2 into current directory
 ```bash
-curl -sSL http://bit.ly/2ysbOFE | bash -s 1.2.0
+curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh && chmod +x install-fabric.sh
+
+./install-fabric.sh --fabric-version 1.2.0 binary
 ```
 
 ## Set up the network
