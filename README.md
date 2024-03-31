@@ -29,10 +29,6 @@ echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 source ~/.profile
 ```
 
-### Download Hyperledger fabric-samples to preffered directory
-```bash
-git clone -b master https://github.com/hyperledger/fabric-samples.git
-```
 
 ### Download and install fabric binaries version 1.2 into current directory
 ```bash
@@ -40,7 +36,11 @@ curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/ins
 
 ./install-fabric.sh --fabric-version 1.2.0 binary
 ```
-
+### Clone git repo
+```bash
+git clone https://github.com/adwaitdeshpande-and/microgrid-blockchain-network.git
+ 
+```
 ## Set up the network
 
 ### Quick
