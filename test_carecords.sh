@@ -1,6 +1,6 @@
 
 CONTRACT_ID="carecords"
-CHANNEL_ID="degrid"
+CHANNEL_ID="hachannel"
 HOUSE1="House01"
 HOUSE2="House02"
 ORDERER_ADDR="orderer.microgrid.org"

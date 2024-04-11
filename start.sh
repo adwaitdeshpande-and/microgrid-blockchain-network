@@ -1,4 +1,4 @@
-CHANNEL_ID="degrid"
+CHANNEL_ID="hachannel"
 ORDERER_ADDR="orderer.microgrid.org"
 CA_FILE="/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/microgrid.org/orderers/orderer.microgrid.org/msp/tlscacerts/tlsca.microgrid.org-cert.pem"
 

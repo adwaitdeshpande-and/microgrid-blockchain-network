@@ -2,7 +2,7 @@
 
 ARTIFACT_DIR="./channel-artifacts"
 CRYPTO_DIR="./crypto-config"
-CHANNEL_NAME="degrid"
+CHANNEL_NAME="hachannel"
 
 #!/bin/bash
 echo "Deleting old configs"
@@ -39,16 +39,16 @@ sed "-i" "s/CA1_PRIVATE_KEY/${PRIV_KEY}/g" base/docker-compose-base.yaml
 
 ../bin/configtxgen -profile OrdererGenesis -outputBlock ./channel-artifacts/genesis.block
 
-../bin/configtxgen -profile DEGrid -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID $CHANNEL_NAME
+../bin/configtxgen -profile hachannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID $CHANNEL_NAME
 
-../bin/configtxgen -profile DEGrid -outputAnchorPeersUpdate ./channel-artifacts/House01Anchor.tx -channelID $CHANNEL_NAME -asOrg House01MSP
+../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House01Anchor.tx -channelID $CHANNEL_NAME -asOrg House01MSP
 
-../bin/configtxgen -profile DEGrid -outputAnchorPeersUpdate ./channel-artifacts/House02Anchor.tx -channelID $CHANNEL_NAME -asOrg House02MSP
+../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House02Anchor.tx -channelID $CHANNEL_NAME -asOrg House02MSP
 
-../bin/configtxgen -profile DEGrid -outputAnchorPeersUpdate ./channel-artifacts/House03Anchor.tx -channelID $CHANNEL_NAME -asOrg House03MSP
+../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House03Anchor.tx -channelID $CHANNEL_NAME -asOrg House03MSP
 
-../bin/configtxgen -profile DEGrid -outputAnchorPeersUpdate ./channel-artifacts/House04Anchor.tx -channelID $CHANNEL_NAME -asOrg House04MSP
+../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House04Anchor.tx -channelID $CHANNEL_NAME -asOrg House04MSP
 
-../bin/configtxgen -profile DEGrid -outputAnchorPeersUpdate ./channel-artifacts/House05Anchor.tx -channelID $CHANNEL_NAME -asOrg House05MSP
+../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House05Anchor.tx -channelID $CHANNEL_NAME -asOrg House05MSP
 
-../bin/configtxgen -profile DEGrid -outputAnchorPeersUpdate ./channel-artifacts/House06Anchor.tx -channelID $CHANNEL_NAME -asOrg House06MSP
+../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House06Anchor.tx -channelID $CHANNEL_NAME -asOrg House06MSP

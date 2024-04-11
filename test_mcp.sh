@@ -1,6 +1,6 @@
 
 CONTRACT_ID="mcp"
-CHANNEL_ID="degrid"
+CHANNEL_ID="hachannel"
 ORDERER_ADDR="orderer.microgrid.org"
 UNIT="Wh"
 LOG_FILE="mcp_test.log"

@@ -96,34 +96,34 @@ The last line printed should look something like:
 
 ##### Channel configuration transaction:
 ```bash
-$ ../bin/configtxgen -profile degrid -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID degrid
+$ ../bin/configtxgen -profile hachannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID hachannel
 ```
 ```channel.tx``` should be created in ```channel-artifacts``` and the last line printed should look something like this:
 ```
-2018-08-24 14:38:49.079 EDT [common/tools/configtxgen] doOutputChannelCreateTx -> INFO 010 Writing new channel tx
+2024-03-02 14:38:49.079 EDT [common/tools/configtxgen] doOutputChannelCreateTx -> INFO 010 Writing new channel tx
 ```
 
 ##### Anchor peer transactions:
 ```bash
-$ ../bin/configtxgen -profile degrid -outputAnchorPeersUpdate ./channel-artifacts/House01Anchor.tx -channelID degrid -asOrg House01MSP
+$ ../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House01Anchor.tx -channelID hachannel -asOrg House01MSP
 
-$ ../bin/configtxgen -profile degrid -outputAnchorPeersUpdate ./channel-artifacts/House02Anchor.tx -channelID degrid -asOrg House02MSP
+$ ../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House02Anchor.tx -channelID hachannel -asOrg House02MSP
 
-$ ../bin/configtxgen -profile degrid -outputAnchorPeersUpdate ./channel-artifacts/House03Anchor.tx -channelID degrid -asOrg House03MSP
+$ ../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House03Anchor.tx -channelID hachannel -asOrg House03MSP
 
-$ ../bin/configtxgen -profile degrid -outputAnchorPeersUpdate ./channel-artifacts/House04Anchor.tx -channelID degrid -asOrg House04MSP
+$ ../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House04Anchor.tx -channelID hachannel -asOrg House04MSP
 
-$ ../bin/configtxgen -profile degrid -outputAnchorPeersUpdate ./channel-artifacts/House05Anchor.tx -channelID degrid -asOrg House05MSP
+$ ../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House05Anchor.tx -channelID hachannel -asOrg House05MSP
 
-$ ../bin/configtxgen -profile degrid -outputAnchorPeersUpdate ./channel-artifacts/House06Anchor.tx -channelID degrid -asOrg House06MSP
+$ ../bin/configtxgen -profile hachannel -outputAnchorPeersUpdate ./channel-artifacts/House06Anchor.tx -channelID hachannel -asOrg House06MSP
 ```
 
 ```House01Anchor.tx```, ```House02Anchor.tx``` ... should be located in ```channel-artifacts```
 and the last lines printed should look something like this:
 ```
-2018-08-24 14:46:37.491 EDT [common/tools/configtxgen] main -> INFO 001 Loading configuration
-2018-08-24 14:46:37.499 EDT [common/tools/configtxgen] doOutputAnchorPeersUpdate -> INFO 002 Generating anchor peer update
-2018-08-24 14:46:37.499 EDT [common/tools/configtxgen] doOutputAnchorPeersUpdate -> INFO 003 Writing anchor peer update
+2024-03-02 14:46:37.491 EDT [common/tools/configtxgen] main -> INFO 001 Loading configuration
+2024-03-02 14:46:37.499 EDT [common/tools/configtxgen] doOutputAnchorPeersUpdate -> INFO 002 Generating anchor peer update
+2024-03-02 14:46:37.499 EDT [common/tools/configtxgen] doOutputAnchorPeersUpdate -> INFO 003 Writing anchor peer update
 ```
 #### Peer-base and docker-compose
 
@@ -182,12 +182,12 @@ docker exec -it cli bash # Enter the cli
 ```
 and then create the channel:
 ```bash
-export CHANNEL_NAME=degrid
+export CHANNEL_NAME=hachannel
 peer channel create -o orderer.microgrid.org:7050 -c $CHANNEL_NAME -f ./channel-artifacts/channel.tx --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/microgrid.org/orderers/orderer.microgrid.org/msp/tlscacerts/tlsca.microgrid.org-cert.pem
 ```
 Alternatively, without entering the cli
 ```bash
-docker exec -ti cli sh -c "peer channel create -o orderer.microgrid.org:7050 -c degrid -f ./channel-artifacts/channel.tx --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/microgrid.org/orderers/orderer.microgrid.org/msp/tlscacerts/tlsca.microgrid.org-cert.pem"
+docker exec -ti cli sh -c "peer channel create -o orderer.microgrid.org:7050 -c hachannel -f ./channel-artifacts/channel.tx --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/microgrid.org/orderers/orderer.microgrid.org/msp/tlscacerts/tlsca.microgrid.org-cert.pem"
 ```
 
 ## Join peer to the channel
@@ -196,15 +196,15 @@ Join peer0.house01.microgrid.org to the channel
 
 From the cli:
 ```bash
-CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/users/Admin@house01.microgrid.org/msp CORE_PEER_ADDRESS=peer0.house01.microgrid.org:7051 CORE_PEER_LOCALMSPID="House01MSP" CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/peers/peer0.house01.microgrid.org/tls/ca.crt peer channel join -b degrid.block
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/users/Admin@house01.microgrid.org/msp CORE_PEER_ADDRESS=peer0.house01.microgrid.org:7051 CORE_PEER_LOCALMSPID="House01MSP" CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/peers/peer0.house01.microgrid.org/tls/ca.crt peer channel join -b hachannel.block
 
-CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/users/Admin@house01.microgrid.org/msp CORE_PEER_ADDRESS=peer1.house01.microgrid.org:7051 CORE_PEER_LOCALMSPID="House01MSP" CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/peers/peer1.house01.microgrid.org/tls/ca.crt peer channel join -b degrid.block
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/users/Admin@house01.microgrid.org/msp CORE_PEER_ADDRESS=peer1.house01.microgrid.org:7051 CORE_PEER_LOCALMSPID="House01MSP" CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/peers/peer1.house01.microgrid.org/tls/ca.crt peer channel join -b hachannel.block
 ```
 
 Without entering the cli:
 ```bash
 docker exec -ti cli sh -c 'CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/users/Admin@house01.microgrid.org/msp CORE_PEER_ADDRESS=peer0.house01.microgrid.org:7051 CORE_PEER_LOCALMSPID="House01MSP"
-CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/peers/peer0.house01.microgrid.org/tls/ca.crt peer channel join -b degrid.block'
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/house01.microgrid.org/peers/peer0.house01.microgrid.org/tls/ca.crt peer channel join -b hachannel.block'
 ```
 
 ## Chaincode
@@ -234,16 +234,16 @@ docker exec -e "CORE_PEER_LOCALMSPID=House01MSP" -e "CORE_PEER_MSPCONFIGPATH=/op
 
 The last lines printed should be something like this:
 ```bash
-2018-09-05 20:48:05.131 UTC [container] WriteFileToPackage -> DEBU 04e Writing file to tarball: src/chaincode/go/src/carecords.go
-2018-09-05 20:48:05.135 UTC [msp/identity] Sign -> DEBU 04f Sign: plaintext: 0ACA070A5B08031A0B088582C1DC0510...F7C67F020000FFFF6A084374001A0000
-2018-09-05 20:48:05.135 UTC [msp/identity] Sign -> DEBU 050 Sign: digest: 88E3BE1783D75457E36882431DCA4EDC77A7996F0C0BD3524E8DB208387A9B0B
-2018-09-05 20:48:05.137 UTC [chaincodeCmd] install -> INFO 051 Installed remotely response:<status:200 payload:"OK" >
+2024-03-05 20:48:05.131 UTC [container] WriteFileToPackage -> DEBU 04e Writing file to tarball: src/chaincode/go/src/carecords.go
+2024-03-05 20:48:05.135 UTC [msp/identity] Sign -> DEBU 04f Sign: plaintext: 0ACA070A5B08031A0B088582C1DC0510...F7C67F020000FFFF6A084374001A0000
+2024-03-05 20:48:05.135 UTC [msp/identity] Sign -> DEBU 050 Sign: digest: 88E3BE1783D75457E36882431DCA4EDC77A7996F0C0BD3524E8DB208387A9B0B
+2024-03-05 20:48:05.137 UTC [chaincodeCmd] install -> INFO 051 Installed remotely response:<status:200 payload:"OK" >
 ```
 
 
-Instantiate the chaincode in the channel (degrid)
+Instantiate the chaincode in the channel (hachannel)
 ```bash
-docker exec -ti cli sh -c "peer chaincode instantiate -o orderer.microgrid.org:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/microgrid.org/orderers/orderer.microgrid.org/msp/tlscacerts/tlsca.microgrid.org-cert.pem -C degrid -n carecords -v 1.0 -c '{\"Args\":[\"init\",\"a\", \"100\", \"b\",\"200\"]}' -P \"OR ('House01MSP.member','House02MSP.member')\""
+docker exec -ti cli sh -c "peer chaincode instantiate -o orderer.microgrid.org:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/microgrid.org/orderers/orderer.microgrid.org/msp/tlscacerts/tlsca.microgrid.org-cert.pem -C hachannel -n carecords -v 1.0 -c '{\"Args\":[\"init\",\"a\", \"100\", \"b\",\"200\"]}' -P \"OR ('House01MSP.member','House02MSP.member')\""
 ```
 ## Test Chaincode
 Test Carecords
