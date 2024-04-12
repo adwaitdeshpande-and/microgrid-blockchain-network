@@ -1,0 +1,479 @@
+    Putting random bids in putBid()
+========================================
+ Time: 2024-04-12 18:18:44
+
+Invoking mcp with arguments:
+ func: putBid
+	price:6
+	quantity:12
+	aguent:House01
+	agent type:EV
+	unit:Wh
+Error: endorsement failure during invoke. response: status:500 message:"error in simulation: failed to execute transaction 227606cd2d72a009ac6e3fac0b840a5bc7437c598d93a8fabbeab0530e0e6ce0: error sending: txid: 227606cd2d72a009ac6e3fac0b840a5bc7437c598d93a8fabbeab0530e0e6ce0(hachannel) exists" 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:96
+	quantity:-49
+	aguent:House02
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:18:45.763 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:75
+	quantity:-47
+	aguent:House03
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:18:46.914 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:73
+	quantity:13
+	aguent:House04
+	agent type:EV
+	unit:Wh
+[34m2024-04-12 18:18:48.077 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:48
+	quantity:5
+	aguent:House05
+	agent type:BESS
+	unit:Wh
+[34m2024-04-12 18:18:50.055 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:90
+	quantity:-13
+	aguent:House06
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:18:51.111 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:2
+	quantity:40
+	aguent:House01
+	agent type:EV
+	unit:Wh
+Error: endorsement failure during invoke. response: status:500 message:"error in simulation: failed to execute transaction bb62997c796e74f1596c8b7efa910f8c2a92c6ca27a8f717bd5dc719721eea18: error sending: txid: bb62997c796e74f1596c8b7efa910f8c2a92c6ca27a8f717bd5dc719721eea18(hachannel) exists" 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:48
+	quantity:4
+	aguent:House02
+	agent type:BESS
+	unit:Wh
+[34m2024-04-12 18:19:21.546 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:14
+	quantity:21
+	aguent:House03
+	agent type:HVAC
+	unit:Wh
+[34m2024-04-12 18:19:21.805 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:35
+	quantity:42
+	aguent:House04
+	agent type:EV
+	unit:Wh
+[34m2024-04-12 18:19:22.001 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:55
+	quantity:-2
+	aguent:House05
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:19:22.165 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:73
+	quantity:23
+	aguent:House06
+	agent type:HVAC
+	unit:Wh
+[34m2024-04-12 18:19:22.355 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:92
+	quantity:49
+	aguent:House01
+	agent type:EV
+	unit:Wh
+Error: endorsement failure during invoke. response: status:500 message:"error in simulation: failed to execute transaction 9cb97c2db33ab58357b36d3a314ff71e811974c4e67bfdf349d5d742980a59ac: error sending: txid: 9cb97c2db33ab58357b36d3a314ff71e811974c4e67bfdf349d5d742980a59ac(hachannel) exists" 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:37
+	quantity:10
+	aguent:House02
+	agent type:BESS
+	unit:Wh
+[34m2024-04-12 18:19:52.721 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:44
+	quantity:-14
+	aguent:House03
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:19:52.937 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:42
+	quantity:31
+	aguent:House04
+	agent type:EV
+	unit:Wh
+[34m2024-04-12 18:19:53.131 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:98
+	quantity:2
+	aguent:House05
+	agent type:BESS
+	unit:Wh
+[34m2024-04-12 18:19:53.281 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:54
+	quantity:-46
+	aguent:House06
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:19:53.441 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:17
+	quantity:4
+	aguent:House01
+	agent type:EV
+	unit:Wh
+[34m2024-04-12 18:20:23.636 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:65
+	quantity:-45
+	aguent:House02
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:20:23.868 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:25
+	quantity:48
+	aguent:House03
+	agent type:HVAC
+	unit:Wh
+[34m2024-04-12 18:20:24.016 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:97
+	quantity:38
+	aguent:House04
+	agent type:EV
+	unit:Wh
+[34m2024-04-12 18:20:24.180 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:91
+	quantity:29
+	aguent:House05
+	agent type:BESS
+	unit:Wh
+[34m2024-04-12 18:20:24.322 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:74
+	quantity:6
+	aguent:House06
+	agent type:HVAC
+	unit:Wh
+[34m2024-04-12 18:20:24.472 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+getBidsForLastNSeconds:
+{"supply":[{"agent_id":"House02","agent_type":"PV","docType":"Bid","price":96,"quantity":-49,"time_stamp":1712945924,"unit":"Wh"},{"agent_id":"House02","agent_type":"PV","docType":"Bid","price":65,"quantity":-45,"time_stamp":1712946023,"unit":"Wh"},{"agent_id":"House03","agent_type":"PV","docType":"Bid","price":75,"quantity":-47,"time_stamp":1712945925,"unit":"Wh"},{"agent_id":"House03","agent_type":"PV","docType":"Bid","price":44,"quantity":-14,"time_stamp":1712945992,"unit":"Wh"},{"agent_id":"House05","agent_type":"PV","docType":"Bid","price":55,"quantity":-2,"time_stamp":1712945962,"unit":"Wh"},{"agent_id":"House06","agent_type":"PV","docType":"Bid","price":90,"quantity":-13,"time_stamp":1712945930,"unit":"Wh"},{"agent_id":"House06","agent_type":"PV","docType":"Bid","price":54,"quantity":-46,"time_stamp":1712945993,"unit":"Wh"}],"demand":[{"agent_id":"House01","agent_type":"EV","docType":"Bid","price":17,"quantity":4,"time_stamp":1712946023,"unit":"Wh"},{"agent_id":"House02","agent_type":"BESS","docType":"Bid","price":48,"quantity":4,"time_stamp":1712945961,"unit":"Wh"},{"agent_id":"House02","agent_type":"BESS","docType":"Bid","price":37,"quantity":10,"time_stamp":1712945992,"unit":"Wh"},{"agent_id":"House03","agent_type":"HVAC","docType":"Bid","price":14,"quantity":21,"time_stamp":1712945961,"unit":"Wh"},{"agent_id":"House03","agent_type":"HVAC","docType":"Bid","price":25,"quantity":48,"time_stamp":1712946024,"unit":"Wh"},{"agent_id":"House04","agent_type":"EV","docType":"Bid","price":73,"quantity":13,"time_stamp":1712945927,"unit":"Wh"},{"agent_id":"House04","agent_type":"EV","docType":"Bid","price":35,"quantity":42,"time_stamp":1712945961,"unit":"Wh"},{"agent_id":"House04","agent_type":"EV","docType":"Bid","price":42,"quantity":31,"time_stamp":1712945993,"unit":"Wh"},{"agent_id":"House04","agent_type":"EV","docType":"Bid","price":97,"quantity":38,"time_stamp":1712946024,"unit":"Wh"},{"agent_id":"House05","agent_type":"BESS","docType":"Bid","price":48,"quantity":5,"time_stamp":1712945929,"unit":"Wh"},{"agent_id":"House05","agent_type":"BESS","docType":"Bid","price":98,"quantity":2,"time_stamp":1712945993,"unit":"Wh"},{"agent_id":"House05","agent_type":"BESS","docType":"Bid","price":91,"quantity":29,"time_stamp":1712946024,"unit":"Wh"},{"agent_id":"House06","agent_type":"HVAC","docType":"Bid","price":73,"quantity":23,"time_stamp":1712945962,"unit":"Wh"},{"agent_id":"House06","agent_type":"HVAC","docType":"Bid","price":74,"quantity":6,"time_stamp":1712946024,"unit":"Wh"}]}
+
+getMCP:
+{"MCP":65,"BPP":73}
+
+
+ Running tests from 'Intra-community Real-time Marketplace' (MCP Calculation Procedure.pdf)
+============================================================================================
+
+ Test 1
+-------------
+Start time 2024-04-12 18:26:25
+
+Invoking mcp with arguments:
+ func: putBid
+	price:150
+	quantity:400
+	aguent:1002003
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:26:25.216 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:100
+	quantity:600
+	aguent:1004002
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:26:55.365 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:40
+	quantity:500
+	aguent:1001002
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:27:25.519 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:50
+	quantity:-600
+	aguent:1002006
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:27:55.763 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:70
+	quantity:-600
+	aguent:1003001
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:28:25.924 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:120
+	quantity:-500
+	aguent:1003001
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:28:56.090 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+getBidsForLastNSeconds (2024-04-12 18:29:56):
+{"supply":[{"agent_id":"1002006","agent_type":"","docType":"Bid","price":50,"quantity":-600,"time_stamp":1712946475,"unit":"Wh"},{"agent_id":"1003001","agent_type":"","docType":"Bid","price":70,"quantity":-600,"time_stamp":1712946505,"unit":"Wh"},{"agent_id":"1003001","agent_type":"","docType":"Bid","price":120,"quantity":-500,"time_stamp":1712946536,"unit":"Wh"}],"demand":[{"agent_id":"1001002","agent_type":"","docType":"Bid","price":40,"quantity":500,"time_stamp":1712946445,"unit":"Wh"},{"agent_id":"1002003","agent_type":"HVAC","docType":"Bid","price":150,"quantity":400,"time_stamp":1712946385,"unit":"Wh"},{"agent_id":"1004002","agent_type":"","docType":"Bid","price":100,"quantity":600,"time_stamp":1712946415,"unit":"Wh"}]}
+
+getMCP (2024-04-12 18:29:56):
+{"MCP":70,"BPP":100}
+Correct values:
+{"MCP": 70, "BPP": 100}
+
+
+ Test 2
+-------------
+Start time 2024-04-12 18:34:56
+
+Invoking mcp with arguments:
+ func: putBid
+	price:150
+	quantity:400
+	aguent:1002003
+	agent type:PV
+	unit:Wh
+ [34m2024-04-12 18:34:56.558 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:100
+	quantity:800
+	aguent:1004002
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:35:26.744 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:40
+	quantity:300
+	aguent:1001002
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:35:57.047 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:50
+	quantity:-600
+	aguent:1002006
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:36:27.249 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:70
+	quantity:-400
+	aguent:1003001
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:36:57.410 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:120
+	quantity:-700
+	aguent:1003001
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:37:27.603 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+getBidsForLastNSeconds (2024-04-12 18:38:27):
+{"supply":[{"agent_id":"1002006","agent_type":"","docType":"Bid","price":50,"quantity":-600,"time_stamp":1712946987,"unit":"Wh"},{"agent_id":"1003001","agent_type":"","docType":"Bid","price":70,"quantity":-400,"time_stamp":1712947017,"unit":"Wh"},{"agent_id":"1003001","agent_type":"","docType":"Bid","price":120,"quantity":-700,"time_stamp":1712947047,"unit":"Wh"}],"demand":[{"agent_id":"1001002","agent_type":"","docType":"Bid","price":40,"quantity":300,"time_stamp":1712946957,"unit":"Wh"},{"agent_id":"1002003","agent_type":"HVAC","docType":"Bid","price":150,"quantity":400,"time_stamp":1712946896,"unit":"Wh"},{"agent_id":"1004002","agent_type":"","docType":"Bid","price":100,"quantity":800,"time_stamp":1712946926,"unit":"Wh"}]}
+
+getMCP (2024-04-12 18:38:27):
+{"MCP":50,"BPP":150}
+Correct values:
+{"MCP": 50, "BPP": 150}
+
+
+ Test 3
+-------------
+Start time 2024-04-12 18:43:27
+
+Invoking mcp with arguments:
+ func: putBid
+	price:150
+	quantity:400
+	aguent:1002003
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:43:28.142 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:100
+	quantity:800
+	aguent:1004002
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:43:58.286 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:40
+	quantity:300
+	aguent:1001002
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:44:28.435 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:50
+	quantity:-600
+	aguent:1002006
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:44:58.627 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:70
+	quantity:-600
+	aguent:1003001
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:45:28.774 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:120
+	quantity:-500
+	aguent:1003001
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:45:58.937 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+getBidsForLastNSeconds (2024-04-12 18:46:58):
+{"supply":[{"agent_id":"1002006","agent_type":"","docType":"Bid","price":50,"quantity":-600,"time_stamp":1712947498,"unit":"Wh"},{"agent_id":"1003001","agent_type":"","docType":"Bid","price":70,"quantity":-600,"time_stamp":1712947528,"unit":"Wh"},{"agent_id":"1003001","agent_type":"","docType":"Bid","price":120,"quantity":-500,"time_stamp":1712947558,"unit":"Wh"}],"demand":[{"agent_id":"1001002","agent_type":"","docType":"Bid","price":40,"quantity":300,"time_stamp":1712947468,"unit":"Wh"},{"agent_id":"1002003","agent_type":"HVAC","docType":"Bid","price":150,"quantity":400,"time_stamp":1712947408,"unit":"Wh"},{"agent_id":"1004002","agent_type":"","docType":"Bid","price":100,"quantity":800,"time_stamp":1712947438,"unit":"Wh"}]}
+
+getMCP (2024-04-12 18:46:59):
+{"MCP":70,"BPP":100}
+Correct values:
+{"MCP": 70, "BPP": 100}
+
+
+ Test 4
+-------------
+Start time 2024-04-12 18:51:59
+
+Invoking mcp with arguments:
+ func: putBid
+	price:100
+	quantity:400
+	aguent:1002003
+	agent type:PV
+	unit:Wh
+ [34m2024-04-12 18:51:59.613 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:50
+	quantity:800
+	aguent:1004002
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:52:29.785 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:120
+	quantity:-600
+	aguent:1002006
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:53:00.046 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+Invoking mcp with arguments:
+ func: putBid
+	price:160
+	quantity:-400
+	aguent:1003001
+	agent type:PV
+	unit:Wh
+[34m2024-04-12 18:53:30.203 UTC 0001 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 
+
+getBidsForLastNSeconds (2024-04-12 18:54:30):
+{"supply":[{"agent_id":"1002006","agent_type":"","docType":"Bid","price":120,"quantity":-600,"time_stamp":1712947980,"unit":"Wh"},{"agent_id":"1003001","agent_type":"","docType":"Bid","price":160,"quantity":-400,"time_stamp":1712948010,"unit":"Wh"}],"demand":[{"agent_id":"1002003","agent_type":"HVAC","docType":"Bid","price":100,"quantity":400,"time_stamp":1712947919,"unit":"Wh"},{"agent_id":"1004002","agent_type":"","docType":"Bid","price":50,"quantity":800,"time_stamp":1712947949,"unit":"Wh"}]}
+
+getMCP (2024-04-12 18:54:30):
+{"MCP":0,"BPP":0}
+Correct values:
+{"MCP": 0, "BPP": 0}
+
