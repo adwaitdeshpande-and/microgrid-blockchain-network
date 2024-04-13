@@ -250,9 +250,9 @@ Test Carecords
 ```bash
 bash test_carecords.sh
 ```
-Test MSP
+Test MCP
 ```
-bash test_msp.sh
+bash test_mcp.sh
 ```
 
 ## Application
